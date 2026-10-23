@@ -22,7 +22,7 @@ jobs:
     - name: Build with PyInstaller
       run: |
         # 注意：Mac 上建议不加 --onefile，这样会生成标准的 .app 应用程序包
-        pyinstaller --windowed --icon=icns.icns tips.py
+        pyinstaller --windowed --icon=icns.icns love.py
         
     - name: Upload artifact
       uses: actions/upload-artifact@v4
